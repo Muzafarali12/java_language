@@ -4,7 +4,7 @@ public static void main(String [] args){
 Scanner s = new Scanner(System.in);
 System.out.println("Eneter A Fibonacci Sequence Ending Number: ");
 int num = s.nextInt();
-int first = 1; 
+int first = 0; 
 int second = 1;
 
 int next;
@@ -13,17 +13,10 @@ for(int i=1; i<=num;i++){
 first = second;
 second = next;
 next = first + second;
-// switch (FibonacciSequence){
-// case 70:
-// System.out.println(next<=n);
-// break;
-// default:
-// System.out.println("ok");
-// }
+System.out.println(first);
 }
-if(i <= num){
-break;
+
 }
 }
-}
+
  
