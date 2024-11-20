@@ -1,5 +1,5 @@
 import java.util.*;
-class Numbers {
+class SumOfAllElements {
 public static void main(String [] args){
 Scanner s = new Scanner(System.in);
 int num [] = new int[5];
