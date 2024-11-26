@@ -1,5 +1,5 @@
 import java.util.*;
-class BubbleSorting {
+class BubbleAlgorithmReversig {
 public static void main(String [] args){
 Scanner s = new Scanner(System.in);
 int[] arr = new int[5];

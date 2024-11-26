@@ -1,5 +1,5 @@
 import java.util.*;
-class SortingInArray {
+class BubbleAlgorithm {
 public static void main(String [] args){
 Scanner s = new Scanner(System.in);
 int[] array = new int[4];
