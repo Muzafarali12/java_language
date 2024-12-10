@@ -4,6 +4,11 @@ int printing;
 String writer;
 int price;
 
+public void perBookDiscount(int price){
+int discount = price - (price * 10 /100);
+System.out.println("If You Buy This Book. You have 10% discount : "+discount);
+}
+
 public static void main(String [] args){
 
 Book Shah_Jo_Risalo = new Book();
@@ -42,30 +47,35 @@ System.out.println("Name = "+Shah_Jo_Risalo.name);
 System.out.println("Printing = "+Shah_Jo_Risalo.printing);
 System.out.println("Writer = "+Shah_Jo_Risalo.writer);
 System.out.println("Price = "+Shah_Jo_Risalo.price);
+Shah_Jo_Risalo.perBookDiscount(Shah_Jo_Risalo.price);
 
 System.out.println("N");
 System.out.println("Name = "+Quran.name);
 System.out.println("Printing = "+Quran.printing);
 System.out.println("Writer = "+Quran.writer);
 System.out.println("Price = "+Quran.price);
+Quran.perBookDiscount(Quran.price);
 
 System.out.println("");
 System.out.println("Name = "+JavaLanguage.name);
 System.out.println("Printing = "+JavaLanguage.printing);
 System.out.println("Writer = "+JavaLanguage.writer);
 System.out.println("Price = "+JavaLanguage.price);
+JavaLanguage.perBookDiscount(JavaLanguage.price);
 
 System.out.println("");
 System.out.println("Name = "+JavaScript.name);
 System.out.println("Printing = "+JavaScript.printing);
 System.out.println("Writer = "+JavaScript.writer);
 System.out.println("Price = "+JavaScript.price);
+JavaScript.perBookDiscount(JavaScript.price);
 
 System.out.println("");
 System.out.println("Name = "+WebDevelopment.name);
 System.out.println("Printing = "+WebDevelopment.printing);
 System.out.println("Writer = "+WebDevelopment.writer);
 System.out.println("Price = "+WebDevelopment.price);
+WebDevelopment.perBookDiscount(WebDevelopment.price);
 
 }
 }
