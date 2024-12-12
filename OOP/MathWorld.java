@@ -23,6 +23,7 @@ for(int i=0; i<=10; i++){
 System.out.println(num+" * "+" "+i+" = "+(i*num));
 }
 }
+
 					// For calculate Factorial
 public void factorialCalculation(){
 Scanner sc = new Scanner(System.in);
@@ -34,6 +35,7 @@ factorial *= i;
 }
 System.out.println("The factoraial of your number is : "+factorial);
 }
+
 
 					// Method for Reverse a Number
 public void reversingaNumber(){
@@ -48,6 +50,7 @@ num = num/10;
 }
 System.out.println(reverse);
 }
+
 					// Method for Print All Factors
 public void printFactors(){
 Scanner sc = new Scanner(System.in);
@@ -59,6 +62,7 @@ System.out.println("This is prime factor "+i);
 }
 }
 }
+
 					// Method For Draw a diamond
 public void generateDiamond(){
 Scanner sc = new Scanner(System.in);
@@ -74,6 +78,7 @@ System.out.print(" *");
 System.out.println();
 }
 }
+
 					//Method for Amstrong number check
 public void amstrongNumberCheck(){
 Scanner sc = new Scanner(System.in);
@@ -107,6 +112,7 @@ System.out.println(originalNum + " is an Armstrong number.");
 System.out.println(originalNum + " is not an Armstrong number.");
 }
 }
+
 					// Method for Perfect number
 public void perfectnumber(){
 Scanner sc = new Scanner(System.in);
@@ -136,10 +142,6 @@ System.out.println("Suare of your number is : "+(num * num));
 }
 
 					// Method for Palindrom Number
-
-
-
-
 public void palindromNumber(){
 Scanner sc = new Scanner(System.in);
 System.out.print("Enter a number for check is number is palindrom  Yes or No : ");
@@ -152,7 +154,7 @@ r = num%10;
 reverse = reverse * 10 + r;
 num  = num/10;
 }
-System.out.println(reverse);
+
 if(reverse == number){
 System.out.println("The number is palindrom number : "+number);
 }
@@ -164,16 +166,54 @@ System.out.println("The number is Not a palindrom number : "+number);
 
 					// Method For Coll Other Method
 public void collOtherMethod(){
+System.out.println("Welcome To Math World!");
+System.out.println("");
+System.out.println("1. Check Even Odd");
+System.out.println("2. Table print");
+System.out.println("3. Factorial Finding");
+System.out.println("4. Reverse Your Number");
+System.out.println("5. Finding All factors");
+System.out.println("6. Generate a Diamond");
+System.out.println("7. Check Amstrong Number");
+System.out.println("8. Perfect Number");
+System.out.println("9. Find Square");
+System.out.println("10. Check Palindrom Number");
+
+Scanner sc = new Scanner(System.in);
+int choice = sc.nextInt();
+if(choice == 1){
 checkEvenOdd();
+}
+else if(choice == 2){
 generatingTable();
+}
+else if(choice == 3){
 factorialCalculation();
+}
+else if(choice == 4){
 reversingaNumber();
+}
+else if(choice == 5){
 printFactors();
+}
+else if(choice == 6){
 generateDiamond();
+}
+else if(choice == 7){
 amstrongNumberCheck();
+}
+else if(choice == 8){
 perfectnumber();
+}
+else if(choice == 9){
 findSquare();
+}
+else if(choice == 10){
 palindromNumber();
+}
+else {
+System.out.println("if You try to Enter a Math World! ");
+}
 }
 					// Main Method
 public static void main(String [] args){
