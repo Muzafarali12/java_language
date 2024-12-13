@@ -79,10 +79,10 @@ System.out.println();
 }
 }
 
-					//Method for Amstrong number check
+					//Method for Armstrong number check
 public void amstrongNumberCheck(){
 Scanner sc = new Scanner(System.in);
-System.out.print("Enter a number for check is number is amstrong Yes or No : ");
+System.out.print("Enter a number for check is number is armstrong Yes or No : ");
 int num = sc.nextInt();
 int reverse = 0;
 int n = 0;
@@ -164,9 +164,12 @@ System.out.println("The number is Not a palindrom number : "+number);
 }
 
 
-					// Method For Coll Other Method
+	
+				// Method For Coll Other Method
 public void collOtherMethod(){
 System.out.println("Welcome To Math World!");
+System.out.println("");
+System.out.println("Enter Your Choice !");
 System.out.println("");
 System.out.println("1. Check Even Odd");
 System.out.println("2. Table print");
@@ -211,8 +214,18 @@ findSquare();
 else if(choice == 10){
 palindromNumber();
 }
+
 else {
 System.out.println("if You try to Enter a Math World! ");
+}
+System.out.println("Would you like to continue program! (Yes or No)");
+
+String Choice = sc.next();
+if(Choice.equals("Yes")){
+collOtherMethod();
+}
+else{
+System.out.println("Thank you! ");
 }
 }
 					// Main Method
