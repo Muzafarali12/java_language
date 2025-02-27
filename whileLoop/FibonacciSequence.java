@@ -14,7 +14,7 @@ i++;
 first = second;
 second = next;
 next = first + second;
-System.out.println(first);
+System.out.print(first+" ");
 }
 }
 }
