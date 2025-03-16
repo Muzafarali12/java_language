@@ -1,4 +1,4 @@
-package com.Student.libraryManagementSystem;
+package com.hello.LMMS;
 
 public class Student {
     private String name;
@@ -25,13 +25,8 @@ public class Student {
     public String getIdCardNumber() { return idCardNumber; }
     public void setIdCardNumber(String idCardNumber) { this.idCardNumber = idCardNumber; }
 
-    @Override
-    public String toString() {
-        return "Student{" +
-                "name='" + name + '\'' +
-                ", id='" + id + '\'' +
-                ", address='" + address + '\'' +
-                ", idCardNumber='" + idCardNumber + '\'' +
-                '}';
+
+    public void displayStudentData(){
+        System.out.println("Name            Id             Address             ID-Card-Number");
     }
 }

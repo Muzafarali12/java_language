@@ -1,4 +1,4 @@
-package com.Student.libraryManagementSystem;
+package com.hello.LMMS;
 
 public class Book {
     private String name;
@@ -26,13 +26,7 @@ public class Book {
     public int getQuantity() { return quantity; }
     public void setQuantity(int quantity) { this.quantity = quantity; }
 
-    @Override
-    public String toString() {
-        return "Book{" +
-                "name='" + name + '\'' +
-                ", author='" + author + '\'' +
-                ", isbn='" + isbn + '\'' +
-                ", quantity=" + quantity +
-                '}';
+    public void display(){
+        System.out.println( name + "       " + author+ "     "+ isbn + "        " +quantity);
     }
 }
