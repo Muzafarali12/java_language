@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Test {
     public static void main(String []args){
         // lamda expression of revresing functional interface
-        TestFunctionalInterface testFunctionalInterface = ()->{
+        ReversingANumber testFunctionalInterface = ()->{
             Scanner input = new Scanner(System.in);
             System.out.print("Enter a Number That you want to Reverse : ");
             int number = input.nextInt();
@@ -69,6 +69,22 @@ public class Test {
             }
         };
         secondLargestNumber.findingSecondLargestNumber();
+
+        // lamda expression for functional interface to reverse a array
+        ReverseArrayOfNumbers reverseArrayOfNumbers = () -> {
+            int[] Array = {321, 432, 543, 654, 876};
+            for (int i = 0; i < Array.length; i++) {
+                int originalNumber = Array[i];
+                int number = 0;
+                while (originalNumber > 0) {
+                    int reverse = originalNumber % 10;
+                    number = number * 10 + reverse;
+                    originalNumber = originalNumber / 10;
+                }
+                System.out.print(" " + number);
+            }
+        };
+        testFunctionalInterface.reverseArray();
     }
 
 }
